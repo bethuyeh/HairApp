@@ -1,0 +1,32 @@
+
+const SecondData = [
+        {
+            id: 1,
+            image:  require("../../assets/hairtype2.png"),
+            Text: "Saloons"
+    
+        },
+        {
+            id: 5,
+            image:  require("../../assets/hairtutorial.png"),
+            Text: "Stylists"
+    
+        },
+    
+        {
+            id: 6,
+            image:  require("../../assets/worker.png"),
+            Text: "Vendors"
+    
+        },
+    
+        {
+            id: 7,
+            image:  require("../../assets/shoppingcolored2.png"),
+            Text: "1k Services"
+    
+        }
+    ]
+    
+        
+export default SecondData;

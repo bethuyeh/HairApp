@@ -1,20 +1,28 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { NativeBaseProvider} from "native-base";
+import SaloonScreen from "./src/Screens/SaloonScreen";
+
+
+
+// const Stack = createNativeStackNavigator()
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NativeBaseProvider>
+      <SaloonScreen/>
+      {/* <NavigationContainer>
+        <StatusBar/>
+        <Stack.Navigator 
+          initialRouteName="Login" 
+          screenOptions={{
+          headerShown: false,
+        }}>
+          <Stack.Screen name="Login" component={LoginScreen}/>
+          <Stack.Screen name="Login" component={RegisterScreen}/>
+          <Stack.Screen name="Login" component={OrderScreen}/>
+          <Stack.Screen name="Login" component={BottomNav}/>
+        </Stack.Navigator>
+      </NavigationContainer> */}
+    </NativeBaseProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
