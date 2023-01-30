@@ -1,9 +1,10 @@
 import { Heading, Text, View } from 'native-base'
-import React from 'react'
+import {React, useState} from 'react'
 import { Colors } from 'react-native/Libraries/NewAppScreen'
 import NumericInput from 'react-native-numeric-input'
 import ButtonNew from '../Components/Button'
 import { useNavigation } from '@react-navigation/native'
+
 
 const SingleProduct = () => {
 

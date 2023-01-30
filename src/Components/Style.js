@@ -1,4 +1,3 @@
-import React from 'react'
 import { StyleSheet, Dimensions } from "react-native";
 
 
@@ -18,11 +17,51 @@ const Style = StyleSheet.create({
         },
 
         shadowProp: {
-            shadowColor: 'black',
-            shadowOffset: {width: -2, height: 4},
+            backgroundColor: 'white',
+            shadowColor: '#787878',
+            shadowOffset: {width: 2, height: 4},
             shadowOpacity: 1,
             shadowRadius: 3,
           },
+
+          backgroundVideo: {
+            position: 'absolute',
+            alignSelf: 'stretch',
+            width: win.width,
+            
+          },
+
+          vendorsImage:{
+            height: win.height * 0.25,
+          },
+
+          vendorsCard: {
+            height: "20%"
+          },
+
+          lowProusity: {
+            marginTop:"-90%"
+          },
+
+          mediumProusity: {
+            marginTop: "-67.5%"
+          },
+          highProusity: {
+            marginTop: "-37%"
+          },
+
+          mediumText: {
+            marginTop: "30.5%"
+          },
+
+          lowText: {
+            marginTop: "53%"
+          },
+
+          map:{
+            width: win.width,
+            height: win.height
+          }
 })
 
 export default Style;

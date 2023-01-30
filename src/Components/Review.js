@@ -1,7 +1,7 @@
 import { Box, FormControl, Heading, Select, TextArea, VStack } from 'native-base'
 import React from 'react'
 import { Colors } from 'react-native/Libraries/NewAppScreen'
-import ButtonNew from './Button'
+
 import Rating from './Rating'
 
 const Review = () => {
@@ -35,15 +35,15 @@ const Review = () => {
           <Text mb={2} fontSize={11}>Jul 12 2022</Text>
 
           <Message 
-            color={Colors.black} 
-            bg={Colors.white} 
+            color="#000" 
+            bg="#fff" 
             size={12} 
             children={"molestias enim suscipit commodi laborum corporis ad, natus dignissimos numquam!"}
           />
 
         </Box>  
-         {/* WRITE REVIEW */}
-         {/* <Box mt={6}>
+         WRITE REVIEW 
+         <Box mt={6}>
             <Heading fontSize={15} bold mb={4}>
               REVIEW THIS PRODUCT
             </Heading>
@@ -59,13 +59,13 @@ const Review = () => {
               </FormControl.Label>
 
                 <Select 
-                  bg={Colors.subGreen} 
+                  bg="#1ACC0C" 
                   borderWidth={0} 
                   rounded={5} 
                   py={3} 
                   placeholder="Rate This Product"
                   _selectedItem={{
-                    bg:Colors.subGreen,
+                    bg:"#1ACC0C",
                     endIcon:<CheckIcon size={3}/>
                   }}
                   selectedValue={rating}
@@ -93,27 +93,25 @@ const Review = () => {
                   w="full" 
                   placeholder="Say Something About Exprience"
                   borderWidth={0}
-                  bg={Colors.subGreen}
+                  bg="#1ACC0C"
                   py={4}
                   _focus={{
-                    bg: Colors.subGreen,
+                    bg: "#1ACC0C",
                   }}
                 />
               </FormControl>
 
-              <ButtonNew bg={Colors.main} color={Colors.white}>
-                SUBMIT
-              </ButtonNew>
+           
 
         
               <Message 
-                color={Colors.black} 
-                bg={Colors.white} 
+                color="#000" 
+                bg="#1ACC0C" 
                 size={12} 
                 children={"molestias enim suscipit commodi laborum corporis ad, natus dignissimos numquam!"}
               />
             </VStack>
-         </Box> */}
+         </Box>
     </Box>
   )
 }

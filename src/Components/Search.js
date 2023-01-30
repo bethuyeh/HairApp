@@ -1,19 +1,19 @@
-import {  VStack, Heading, MaterialIcons, Input, Icon} from 'native-base'
+import {  Box, Input, Icon} from 'native-base'
 import React from 'react'
 import {FontAwesome} from '@expo/vector-icons'
 
 const Search = () => {
 
   return (
-    <VStack>
+    <Box w="full">
     <Input 
     placeholder="Search Saloons, Stylists..etc" 
     width="100%" 
     borderRadius="4"
-    borderWidth="3" 
+    borderWidth="1" 
     mt="1"
     py="3"
-    borderColor="cyan.200"
+    borderColor="#148189"
     placeholderTextColor="muted.400"
     fontSize="16" 
     InputLeftElement={
@@ -24,7 +24,7 @@ const Search = () => {
         color="muted.400" 
         as={<FontAwesome name="search" />} />}
      />
-     </VStack>
+     </Box>
   )
   }
 export default Search;

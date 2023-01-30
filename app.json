@@ -1,7 +1,9 @@
 {
   "expo": {
-    "name": "hairShop",
-    "slug": "shoeshop-app",
+    "name": "hairApp",
+    "slug": "hairApp",
+    "privacy": "public",
+    "description": "A go-to for everything 'hair'!",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/favicon.png",
@@ -13,13 +15,24 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "location",
+          "fetch"
+        ]
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/favicon.png",
         "backgroundColor": "#3B8769"
-      }
+      },
+      "permissions": [
+        "ACCESS_BACKGROUND_LOCATION"
+      ]
+      
     },
     "web": {
       "favicon": "./assets/favicon.png"

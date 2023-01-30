@@ -2,27 +2,27 @@
   
     const Second = [
         {
-            id: 1,
+            id: 5,
             image:  require("../../assets/hairtype2.png"),
             Text: "Hair Quiz"
     
         },
         {
-            id: 2,
+            id: 6,
             image:  require("../../assets/hairtutorial.png"),
             Text: "Tutorials"
     
         },
     
         {
-            id: 6,
+            id: 7,
             image:  require("../../assets/worker.png"),
             Text: "Advisory"
     
         },
     
         {
-            id: 7,
+            id: 8,
             image:  require("../../assets/newsreport.png"),
             Text: "Articles"
     

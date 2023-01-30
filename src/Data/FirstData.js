@@ -1,13 +1,4 @@
-import shampoo2 from "../../assets/shampoo2.png"
-import saloncolored2 from "../../assets/saloncolored2.png"
-import shoppingcolored2 from "../../assets/shoppingcolored2.png"
-import piggybankcolored2 from "../../assets/piggybankcolored2.png"
-import hairtype2 from "../../assets/hairtype2.png"
-import hairtutorial from "../../assets/hairtutorial.png"
-import worker from "../../assets/worker.png"
-import newsarticle from "../../assets/shoppingcolored2.png"
 
-  
     const FirstData = [
         {
             id: 1,
@@ -33,6 +24,33 @@ import newsarticle from "../../assets/shoppingcolored2.png"
             id: 4,
             image:  require("../../assets/piggybankcolored2.png"),
             Text: "1k Services"
+    
+        },
+
+        {
+            id: 5,
+            image:  require("../../assets/hairtype2.png"),
+            Text: "Hair Quiz"
+    
+        },
+        {
+            id: 6,
+            image:  require("../../assets/hairtutorial.png"),
+            Text: "Tutorials"
+    
+        },
+    
+        {
+            id: 7,
+            image:  require("../../assets/worker.png"),
+            Text: "Advisory"
+    
+        },
+    
+        {
+            id: 8,
+            image:  require("../../assets/newsreport.png"),
+            Text: "Articles"
     
         }
     ]

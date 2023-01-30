@@ -11,7 +11,7 @@ const OrderInfos = [
   },
 
   {
-    title: "Shipping",
+    title: "Delivery",
     price: 500,
     color: "black"
   },
@@ -31,14 +31,14 @@ const OrderInfos = [
 
 const OrderModel = () => {
 
-  const navigation = useNavigation()
+  // const navigation = useNavigation()
   const [showModel, setShowModel] = useState(false)
   return (
     <Center>
       <ButtonNew 
         onPress={() => setShowModel(true)} 
-        bg={Colors.main} 
-        color={Colors.white} 
+        bg="#1AC0CC" 
+        color="#fff" 
         mt={5}>
           SHOW PAYMENT & TOTAL
         
@@ -50,10 +50,11 @@ const OrderModel = () => {
             <Modal.Header>Order</Modal.Header>
               <Modal.Body>
                 <VStack space={7}>
+
                 {OrderInfos.map((i, index) => (
                   <HStack key={index} alignItems="center" justifyContent="space-between">
                     <Text fontWeight="medium">{i.title}</Text>
-                    <Text color={i.color === "main" ? Colors.main : Colors.black} bold> ${i.price} </Text>
+                    <Text color={i.color === "main" ? "#1AC0CC" : '#000'} bold> ${i.price} </Text>
                   </HStack>
                 )) }
                   
@@ -63,7 +64,7 @@ const OrderModel = () => {
                   <Pressable 
                     w="full" 
                     justifyCOntent="Center" 
-                    bg={Colors.paypal}
+                    bg="#22C5CF"
                     h={45}
                     rounded={2}
                     overflow="hidden"
@@ -83,17 +84,17 @@ const OrderModel = () => {
                   <Button 
                     w="full"
                     mt={2}
-                    bg={Colors.black}
+                    bg="#000"
                     flex={1}  
                     h={45} 
                     _text={{
-                    color:Colors.white
+                    color:"#fff"
                     }}
                     onPress={() => {
-                    navigation.navigate("Home")
+                    // navigation.navigate("Home")
                     setShowModel(false)}}
                     _pressed={{
-                    bg: Colors.main,
+                    bg: "#1AC0CC",
                     }}
                   >
                     PLACE AN ORDER

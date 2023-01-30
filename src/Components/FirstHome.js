@@ -1,22 +1,36 @@
-import {HStack} from 'native-base'
+import {Flex, HStack, Pressable} from 'native-base'
 import React from 'react'
 import FirstData from '../Data/FirstData'
 import FirstCard from './FirstCard'
 
 
+
 const FirstHome = () => {
+  
   return (
-    <HStack>
+  <Flex
+    flexWrap="wrap" 
+    direction="row" 
+    justifyContent="normal"
+    px={1}
+    w='100%'>
       {
         FirstData.map((i) => {
-            return (
-                <FirstCard key={i.id} image={i.image} Text={i.Text}/>
-            )
-        })
-      }
+          return(
+            
+              <FirstCard
+                image={i.image}
+                Text = {i.Text}
+                id={i.id}
+                key={i}
+              />
+         
+          )
+        })        
+        }
+         </Flex>
+      ); 
+    
+  }
 
-    </HStack>
-  )
-}
-
-export default FirstHome;
+export default FirstHome

@@ -32,7 +32,7 @@ const OrderInfos = [
 
 const PlaceModel = () => {
 
-  const navigation = useNavigation()
+  // const navigation = useNavigation()
 
   const [showModel, setShowModel] = useState(false)
   return (
